@@ -4,7 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About - Vasilevousa</title>
-  <link rel="icon" href="images/vasilevousa.jpg" type="image/x-icon"> 
+  <link rel="icon" href="images/vasilevousaPNG.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bentham|Playfair+Display|Raleway:400,500|Suranna|Trocchi" rel="stylesheet">
+
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -14,46 +21,49 @@
 </head>
 <body  style="background-color: #eabeab;">
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: brown;">
-    <div class="container d-flex align-items-center">
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: brown;">
+  <div class="container d-flex align-items-center">
 
-      <!-- Logo + Socials -->
-      <div class="d-flex align-items-center logos">
-        <a class="navbar-brand d-flex align-items-center" href="index.html">
-          <img src="images/vasilevousa.jpg" alt="Logo" class="rounded me-2" style="height: 55px;">
-          VASILEVOUSA - MOSAIC ART
-        </a>
-        <a href="https://www.instagram.com/koumasweb" target="_blank" class="d-flex align-items-center">
-          <img src="images/instagram-new--v2.png" alt="Instagram" style="height: 30px; width: 30px;">
-        </a>
-        <a href="https://www.facebook.com/share/17PwXqmmLV/" target="_blank" class="d-flex align-items-center">
-          <img src="images/Facebook-icon-white-PNG-large-size.png" alt="fb" style="height: 25px; width: 27px; margin-left: 10px;">
-        </a>
-      </div>
-
-      <!-- Hamburger Toggler -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Nav Links -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
-          <li class="nav-item"><a class="nav-link" href="gallery.html">GALLERY</a></li>
-          <li class="nav-item"><a class="nav-link" href="orderRequest.html">ORDER REQUEST</a></li>
-          <li class="nav-item"><a class="nav-link active" href="about.html">ABOUT</a></li>
-        </ul>
-      </div>
+    <!-- Logo + Instagram side by side -->
+    <div class="d-flex align-items-center logos">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="images/vasilevousaPNG.png" alt="Logo" class="rounded me-2" style="height: 55px;">
+        VASILEVOUSA
+      </a>
+      <a href="https://www.instagram.com/koumasweb" target="_blank" class="d-flex align-items-center">
+        <img src="images/instagram-new--v2.png" alt="Instagram" style="height: 30px; width: 30px;">
+      </a>
+      <a href="https://www.facebook.com/share/17PwXqmmLV/" target="_blank" class="d-flex align-items-center">
+        <img src="images/Facebook-icon-white-PNG-large-size.png" alt="fb" style="height: 25px; width: 27px; margin-left: 10px;">
+      </a>
     </div>
-  </nav>
+
+    <!-- Hamburger Toggler -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Nav Links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">GALLERY</a></li>
+        <li class="nav-item"><a class="nav-link active" href="orderRequest.html">ORDER REQUEST</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
 
 <!-- Hero Section -->
 <section class="hero4 d-flex align-items-center justify-content-center text-center">
   <div style="padding-top: 100px;" class="hero-content">
     <h1>About Vasilevousa</h1>
+     <img src="images/vasilevousaPNG.png" style="height: 180px; margin-bottom: 30px; margin-top: 30px;"> 
     <p class="lead">The Artist Behind the Mosaics – <strong>Pantelis Miamiliotis</strong></p>
 
   </div>
@@ -85,6 +95,28 @@
       </div>
     </div>
   </section>
+
+
+<!-- Contact Section -->
+<section class="container my-5">
+    <div class="row g-4">
+        <div class="col-md-6">
+            <h2>Get in Touch</h2>
+            <p><strong>Address:</strong> Κοντεμένου 25, Κοκκινοτριμιθιά, Λευκωσία.</p>
+            <p><strong>Phone:</strong> +357 99712390</p>
+        </div>
+        <div class="col-md-6">
+            <h2>Find Us</h2>
+            <!-- Google Maps Embed -->
+            <div class="ratio ratio-16x9"> 
+              <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13080.811894412018!2d33.412856219772415!3d34.95152105470971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14e0a10018060107%3A0xea98eac18f7476c2!2sPet%20Love%20Studio!5e0!3m2!1sel!2s!4v1756338600162!5m2!1sel!2s" width="600" height="450" style="border:0; box-shadow: 0px 0px 7px rgba(0,0,0,0.55); border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
 
   <!-- Footer -->
   <footer class="text-light py-4" style="background-color: brown; margin-top: 0 !important;">

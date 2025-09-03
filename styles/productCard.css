@@ -145,7 +145,7 @@ body {
 .product-price-btn button {
   border: none;
   border-radius: 60px;
-  background-color: #9cebd5;
+  background-color: #a5782a;
   color: #fff;
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
@@ -157,7 +157,7 @@ body {
 }
 
 .product-price-btn button:hover {
-  background-color: #79b0a1;
+  background-color: #a52a2a;
   transform: scale(1.05);
 }
 
