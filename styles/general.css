@@ -1,0 +1,58 @@
+.logos {
+  font-family: Uncial Antiqua;
+}
+
+div {
+  font-family:'Times New Roman', Times, serif
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url(../images/psifidotohero1.jpg) center top/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* so text stays readable */
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); /* darkness overlay */
+  backdrop-filter: blur(4px);      /* blur effect */
+  z-index: 1;
+}
+
+.hero * {
+  position: relative;
+  z-index: 2; /* bring text above the overlay */
+}
+
+
+.hero2 {
+  position: relative;
+  height: 60vh;
+  background: url(../images/psifidotohero1.jpg) center top/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* so text stays readable */
+  overflow: hidden;
+}
+
+.hero2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); /* darkness overlay */
+  backdrop-filter: blur(4px);      /* blur effect */
+  z-index: 1;
+}
+
+.hero2 * {
+  position: relative;
+  z-index: 2; /* bring text above the overlay */
+}

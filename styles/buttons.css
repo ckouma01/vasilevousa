@@ -1,0 +1,68 @@
+.super-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 14px 28px;
+  background: linear-gradient(145deg, #3e1f00, #5a2c00); /* dark brown gradient */
+  border: 2px solid rgba(255, 200, 150, 0.3); /* warm brownish border */
+  border-radius: 100px;
+  color: #fff8f0; /* softer white for warmth */
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0 0 20px rgba(255, 140, 0, 0.2); /* warm orange glow */
+  backdrop-filter: blur(8px);
+  z-index: 1;
+}
+
+.super-button::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(from 0deg, #ff8c00, #ff4500, #b5651d, #ff8c00);
+  animation: rotate 5s linear infinite;
+  z-index: -2;
+}
+
+.super-button::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: #2a1200; /* deep brown inner background */
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.super-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(255, 140, 0, 0.35); /* stronger warm glow on hover */
+}
+
+.super-button:hover .arrow {
+  transform: translateX(6px);
+}
+
+
+.arrow {
+  width: 22px;
+  height: 22px;
+  transition: transform 0.3s ease-in-out;
+  color: rgba(255, 140, 0, 0.35);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

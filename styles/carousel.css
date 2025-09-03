@@ -1,0 +1,58 @@
+.product-img {
+  width: 100%;
+  max-width: 327px; 
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  /* remove fixed height */
+}
+
+.carousel-img {
+  width: 100%;
+  height: auto;       /* scale height based on width */
+  object-fit: cover;
+  display: none;
+}
+
+.carousel-img.active {
+  display: block;
+}
+
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;              /* icon size inside the circle */
+  color: #fff;
+  background-color: rgba(0,0,0,0.6); /* darker for visibility */
+  border: none;
+  border-radius: 50%;           /* makes it circular */
+  cursor: pointer;
+  width: 40px;                  /* circle width */
+  height: 40px;                 /* circle height */
+  display: flex;                /* center icon inside */
+  align-items: center;          /* vertical center */
+  justify-content: center;      /* horizontal center */
+  z-index: 2;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.arrow:hover {
+  background-color: rgba(0,0,0,0.9);
+  transform: translateY(-50%) scale(1.1);
+}
+
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
